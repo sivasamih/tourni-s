@@ -21,10 +21,10 @@
         // $phone = trim($_POST["phone"]);
         $message = trim($_POST["message"]);
 
-        print "name :".$name."<br/>";
-        print "email :".$email."<br/>";
-        print "subject :".$subject."<br/>";
-        print "message :".$message."<br/>";
+        // print "name :".$name."<br/>";
+        // print "email :".$email."<br/>";
+        // print "subject :".$subject."<br/>";
+        // print "message :".$message."<br/>";
         
         if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL)  OR empty($subject) OR empty($message)) {
             # Set a 400 (bad request) response code and exit.
@@ -52,10 +52,13 @@
             # Set a 200 (okay) response code.
             http_response_code(200);
             echo '<p class="alert alert-success">Thank You! Your message has been sent.</p>';
+            $url='https://tourni-s.com/';
+            echo '<script>window.location = "'.$url.'";</script>';
         } else {
             # Set a 500 (internal server error) response code.
             http_response_code(500);
             echo '<p class="alert alert-warning">Oops! Something went wrong, we couldnt send your message.</p>';
+
         }
 
     } else {
