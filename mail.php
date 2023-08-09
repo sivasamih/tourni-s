@@ -68,7 +68,7 @@
 
         $spamList=['adrii.arag@hotmail.com','jessica_guevara6871@yahoo.com' ,'RobertDof'];
 
-        if (stripos(json_encode($spamList),$email) !== false || stripos(json_encode($spamList),$name) !== false  || $subjectMaster!==$subject) {
+        if (stripos(json_encode($spamList),$email) !== false || stripos(json_encode($spamList),$name) !== false  || $subjectMaster!==$subject || strlen($message)>100) {
             // echo "found mystring";
             # Set a 500 (internal server error) response code.
             http_response_code(500);
