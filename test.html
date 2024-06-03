@@ -8,13 +8,13 @@
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:image:src" content="">
   <meta property="og:image" content="">
-  <meta name="twitter:title" content="Latex Free Tourniquet Manufacturer | Infection Free Tourniquet Supplier - Tourni-S®">
+  <meta name="twitter:title" content="Single Use Tourniquet Manufacturer | Latex Free Disposable Tourniquet Band - Tourni-S®">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/favicon-1.png" type="image/x-icon">
-  <meta name="description" content="Tourni-S® is a latex free tourniquet, designed for single use, which helps prevent spreading infection from one patient to another. We offer custom design with hospital logos, distributor information or to communicate messaging. Visit website for more details.">
+  <meta name="description" content="Tourni-S® is a latex free tourniquet band, designed for single use only, this tourniquet helps safeguard against cross infections. These bands can be branded and designed with hospital logos and are available in pack sizes of 50 and 200 strips. Hospitals and doctors can avoid the spread of infections by using single-use Tourni-S®.">
   
   
-  <title>Latex Free Tourniquet Manufacturer | Infection Free Tourniquet Supplier - Tourni-S®</title>
+  <title>Single Use Tourniquet Manufacturer | Latex Free Disposable Tourniquet Band - Tourni-S®</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -25,6 +25,23 @@
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lec2hclAAAAAFMUkFVC2RabHiIbK-rczMJNHQJk"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("tourni-contact-form").submit();
+    }
+    function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6Lec2hclAAAAAFMUkFVC2RabHiIbK-rczMJNHQJk', {action: 'submit'}).then(function(token) {
+              console.log("token > ",token)
+          });
+        });
+      }
+  </script>
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y2JC31G9J"></script>
@@ -47,7 +64,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="index.html#top">
-                        <img src="assets/images/tourni-s-logo.png" alt="Skin Friendly Tourniquet" style="height: 3rem;">
+                        <img src="assets/images/tourni-s-logo.png" alt="Tourni-s" style="height: 3rem;">
                     </a>
                 </span>
                 
@@ -82,7 +99,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 image-wrapper">
-                <img class="w-100" src="assets/images/new-1035x1174.png" alt="Tourniquet Manufacturer">
+                <img class="w-100" src="assets/images/new-1035x1174.png" alt="Tourni-S®">
             </div>
             <div class="col-12 col-md">
                 <div class="text-wrapper text-center">
@@ -145,7 +162,7 @@
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
                 <div class="image-wrapper">
-                    <img src="assets/images/ts1.png" alt="Medical Tourniquet Supplier">
+                    <img src="assets/images/ts1.png" alt="Tourni-S®">
                     
                 </div>
             </div>
@@ -171,11 +188,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-4 image-wrapper">
-                <img class="w-100" src="assets/images/tournis-1150x1176.png" alt="Pediatric Tourniquet Manufacturer">
+                <img class="w-100" src="assets/images/tournis-1150x1176.png" alt="tourni-s kids pack">
             </div>
             <div class="col-12 col-md">
                 <div class="text-wrapper text-center" style="margin-top: 20px !important;">
-                    <h2 class="mbr-section-title mbr-fonts-style mb-3 display-2" style="color:#6bc048 !important"><strong>Also available </strong><br><strong>in kid's size</strong></h2>
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2" style="color:#6bc048 !important"><strong>Also available </strong><br><strong>in kid's size</strong></h1>
                     
                     <div class="mbr-section-btn mt-3"><a class="btn btn-primary display-7" href="#bottom">Get in touch</a></div>
                 </div>
@@ -196,7 +213,7 @@
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                <form action="mail.php" method="POST" class="mbr-form form-with-styler contact__form" data-verified="mail.php">
+                <form id="tourni-contact-form" action="mail.php" method="POST" class="mbr-form form-with-styler contact__form" data-verified="mail.php">
                     <div class="row">
                         <div data-form-alert="" class="alert alert-success col-12 form__sucess" style="display: none">Thanks for filling out
                             the form!</div>
@@ -215,7 +232,13 @@
                         <div class="col-12 form-group mb-3" data-for="textarea">
                             <textarea name="message" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-form5-f"></textarea>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"><button type="submit" class="btn btn-primary display-4">Submit</button></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <div class="g-recaptcha" data-sitekey="6Lec2hclAAAAAFMUkFVC2RabHiIbK-rczMJNHQJk"></div>
+                            <button 
+                            data-sitekey="6Lec2hclAAAAAFMUkFVC2RabHiIbK-rczMJNHQJk" 
+                            data-callback='onSubmit' 
+                            data-action='submit'
+                            type="submit" class="btn btn-primary display-4 g-recaptcha">Submit</button></div>
                     </div>
                 </form>
             </div>
@@ -254,6 +277,8 @@
         </div>
     </div>
 </section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 0rem;"><a href="https://mobiri.se/2469075" style="flex: 1 1;height: 0rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 0rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7"></p><a style="z-index:1" href="https://mobirise.com/website-design-software.html"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+
+
   
   
 <input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgba(234, 239, 241, 0.99)' data-cookie-textButton='Agree' data-cookie-colorButton='' data-cookie-colorLink='#6bc048' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
