@@ -105,7 +105,7 @@
                 </div>
             </nav>
         </section>
-        
+
         <section data-bs-version="5.1" class="header11 cid-syiDty7NzR"
             id="header11-1g">
 
@@ -323,8 +323,9 @@
                             </div>
                             <div
                                 class="col-lg-12 col-md-12 col-sm-12 align-center alert-box">
-                               <p class="alert-text" style="color: #6BC048;"></p>
-                           </div>
+                                <p class="alert-text"
+                                    style="color: #6BC048;font-size: clamp(18px,5vw,25px);text-transform: capitalize;"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -421,8 +422,8 @@
 
                             if(res.status === 200){
                                 $("#Verify").hide()
-                                $("#Validate").show()
                                 $("#otp-box").fadeIn()
+                                $("#Validate").show()
                                 $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
                             }
                           }catch(ex){console.log(ex)}
@@ -450,7 +451,7 @@
                                 body: JSON.stringify({ EmailID: email, OTP: otp })
                             })
                             if(res.status === 200){
-                                $("#otp-form5-f").hide()
+                                $("#otp-box").hide()
                                 $("#message-box").show()
                                 $("#Validate").hide()
                                 $("#Submit").show()
@@ -497,19 +498,19 @@
                                 body: JSON.stringify(reqData)
                             })
                             if(res.status === 200){
+                                $("#Submit").hide()
                                 $("#name-form5-f").attr("disabled", "true");
                                 $("#email-form5-f").attr("disabled", "true");
                                 $("#otp-form5-f").attr("disabled", "true");
                                 $("#textarea-form5-f").attr("disabled", "true");
                                 $(".alert-text").text('successfully submited')
                                 $('.alert-box').fadeIn()
+                                $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
 
                                 setTimeout(() => {
-                                $(".alert-text").text('')
-                                $('.alert-box').fadeOut()
-                                    
-                                }, 3000);
                                 resetForm()  
+                                }, 3000);
+                               
                             }else{
                                 alert("something went wrong")
                             }
@@ -536,6 +537,8 @@
                 $("#message-box").hide()
                 $("#Submit").hide()
                 $("#Submit").text('Submit')
+                $(".alert-text").text('')
+                $('.alert-box').hide()
                 $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
             }
 
